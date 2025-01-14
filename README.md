@@ -8,7 +8,7 @@
 Бот доступен по адресу: [БОТ](https://t.me/BlackSmokeOnebot)
 ## Технологии
 * Python 3.9
-* 
+* Aiogram 3.17
 * 
 * 
 * 

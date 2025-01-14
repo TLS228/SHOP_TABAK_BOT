@@ -18,7 +18,7 @@ main_menu = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="Табак для кальяна"), KeyboardButton(text="Сигариллы"), KeyboardButton(text="Сигары")],
         [KeyboardButton(text="Папиросы"), KeyboardButton(text="Кальяны"), KeyboardButton(text="Стики")],
-        [KeyboardButton(text="Электронные сигареты")]
+        [KeyboardButton(text="Электронные сигареты")], [KeyboardButton(text="Снюс")]
     ]
 )
 
@@ -73,7 +73,7 @@ async def show_hqd_menu(message: Message):
 async def show_hqd_model(message: Message):
     await message.answer(f"Вы выбрали {message.text}. Чем могу помочь дальше?")
 
-@router.message(F.text.in_(["Табак для кальяна", "Сигариллы", "Сигары", "Папиросы", "Кальяны", "Стики"]))
+@router.message(F.text.in_(["Табак для кальяна", "Сигариллы", "Сигары", "Папиросы", "Кальяны", "Стики", "Снюс"]))
 async def show_category(message: Message):
     await message.answer(f"Вы выбрали {message.text}. Эта категория пока не настроена.")
 
