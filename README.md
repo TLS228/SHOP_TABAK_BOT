@@ -5,15 +5,15 @@
 ## Автор проекта:
 *  [Никита Малумашвили](https://github.com/TLS228)
 
-Бот доступен по адресу: [БОТ](БОТ)
+Бот доступен по адресу: [БОТ](https://t.me/BlackSmokeOnebot)
 ## Технологии
 * Python 3.9
-* Django
-* Django Rest Framework
-* Docker
-* Gunicorn
-* Nginx
-* PostgreSQL
+* 
+* 
+* 
+* 
+* 
+* 
 ## Запуск проекта
 1. Клонировать репозиторий и перейти в него в командной строке:
 
@@ -28,11 +28,11 @@ cd SHOP_TABAK_BOT
 2. Создать и активировать виртуальное окружение:
 
 ```
-python3 -m venv env
+python3 -m venv venv
 ```
 
 ```
-source env/bin/activate
+source venv/bin/activate
 ```
 
 ```

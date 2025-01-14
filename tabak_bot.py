@@ -1,13 +1,14 @@
+import os
+
 from aiogram import Bot, Dispatcher, Router, F
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 from aiogram.filters import Command
 from aiogram.fsm.storage.memory import MemoryStorage
 import asyncio
 
-API_TOKEN = '7874612045:AAE2ww42sTQlsmMO7vFqgjTCUC53-jnm2UM'
 
 # Инициализация бота, диспетчера и роутера
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=os.getenv("API_TOKEN"))
 dp = Dispatcher(storage=MemoryStorage())
 router = Router()
 
