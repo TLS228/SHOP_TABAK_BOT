@@ -27,7 +27,7 @@ main_menu = ReplyKeyboardMarkup(
 # Словари для хранения данных
 categories = {
     "Табак для кальяна": ["Adalya", "Al Fakher", "Tangiers"],
-    "Кальяны": ["Khalil Mamoon", "Amy Deluxe", "Hoob Hookahs"],
+    "Кальяны": ["Khalil Mamoon", "Amy", "Hoob Hookahs"],
     "Снюс": ["Siberia", "General", "Odens"],
     "Жидкости для электронных сигарет": ["Nasty Juice",
                                          "Dinner Lady",
@@ -41,10 +41,9 @@ items = {
     "Adalya": ["Виноград", "Арбуз с мятой", "Манго", "Ананас"],
     "Al Fakher": ["Апельсин", "Лимон с мятой", "Малина", "Вишня"],
     "Tangiers": ["Лавандовый чай", "Черничный пирог", "Гуава", "Персик"],
-    "Khalil Mamoon": ["Высокая шахта", "ручная работа", "традиционный стиль"],
-    "Amy Deluxe": ["Компактный размер", "подсветка", "алюминиевая шахта"],
-    "Hoob Hookahs": ["Современный дизайн", "регулируемая тяга",
-                     "премиальные материалы"],
+    "Khalil Mamoon": ["Mini Kamanja Oxide", "Halazone Black", "Beast Black"],
+    "Amy": ["SS 20", "4-Star 460", "Deluxe 053"],
+    "Hoob Hookahs": ["Enzo", "Cyber", "subAtom"],
     "Siberia": ["Мята", "Лесные ягоды", "Ледяной кофе", "Сливочная ваниль"],
     "General": ["Цитрус", "Эвкалипт", "Зимние специи", "Сладкая лакрица"],
     "Odens": ["Ментол", "Дыня", "Вишневый лед", "Тропический коктейль"],
