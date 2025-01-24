@@ -189,11 +189,9 @@ async def item_absent(message: Message):
 @router.message(lambda message: user_state.get(
         message.from_user.id, {}).get("state") == "custom_request"
         )
-async def handle_custom_request(message: Message):
-    custom_request = message.text.strip()
-    # напишите OWNER_CHAT_ID в файле .env
-    await bot.send_message(chat_id=os.getenv('OWNER_CHAT_ID'),
-                           text=f"Запрос на товар: {custom_request}")
+async def handle_custom_request(message: Message, bot: Bot):
+    owner_chat_id = os.getenv('OWNER_CHAT_ID')
+    await bot.send_message(chat_id=owner_chat_id, text=f"Запрос на товар: {message.text}")
     await message.answer("Ваш запрос отправлен владельцу магазина.")
     user_state[message.from_user.id] = {"state": "main_menu"}
 
